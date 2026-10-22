@@ -31,7 +31,7 @@
       <p class="eyebrow">DATA NOTE</p>
       <h2>숫자를 읽기 전에</h2>
       <p>매매는 2026년 9월 확정 집계, 임대차는 2026년 8월 공개 집계를 중심으로 구성했습니다. 신고 지연·해제로 수치는 달라질 수 있습니다.</p>
-      <p><strong>가격지수</strong>는 월별 대표가격을 2026년 1월=100으로 환산한 비교용 프록시이며, 한국부동산원의 공인 시군구 실거래가격지수가 아닙니다.</p>
+      <p><strong>기간 조회</strong>는 확보된 거래 표본의 계약일에 적용되며, 상단 지표와 거래량은 선택 종료일이 속한 월간 집계입니다.</p>
       <a href="#sources" id="closeMethodLink">출처와 산식 보기 →</a>
     </div>
     <button class="icon-btn" id="closeMethod" type="button" aria-label="데이터 안내 닫기">×</button>
@@ -90,17 +90,6 @@
       <div class="kpi-grid" id="kpiGrid"></div>
 
       <div class="chart-grid">
-        <article class="card index-card">
-          <div class="card-head">
-            <div><p class="card-kicker">PRICE PROXY INDEX</p><h3 id="indexTitle">아파트 매매 가격지수</h3></div>
-            <span class="badge neutral">2026.01 = 100</span>
-          </div>
-          <div class="index-readout"><strong id="indexValue">99.3</strong><span id="indexDelta" class="up">+0.6%</span></div>
-          <div class="chart" id="indexChart" role="img" aria-label="월별 가격지수 선 그래프"></div>
-          <div class="chart-axis"><span>1월</span><span>3월</span><span>5월</span><span>7월</span><span>9월</span></div>
-          <p class="fineprint">월별 대표가격 환산 프록시 · 공인 실거래가격지수 아님</p>
-        </article>
-
         <article class="card volume-card">
           <div class="card-head">
             <div><p class="card-kicker">TRANSACTION VOLUME</p><h3 id="volumeTitle">월별 거래량</h3></div>
@@ -111,18 +100,6 @@
           <div class="volume-note" id="volumeNote"><span>활발</span> 용강동 · 황성동 · 현곡면 하구리</div>
         </article>
 
-        <article class="card gauge-card">
-          <div class="card-head">
-            <div><p class="card-kicker">MARKET TEMPERATURE</p><h3>시장 체감온도</h3></div>
-            <button class="help-dot" type="button" title="거래량, 가격방향, 신고가 비중을 종합한 화면용 지표">?</button>
-          </div>
-          <div class="gauge-wrap">
-            <div class="gauge" id="gauge"><div class="gauge-center"><strong id="gaugeValue">48</strong><span>관망</span></div></div>
-            <div class="gauge-copy"><strong id="gaugeHeadline">매수·매도 힘겨루기</strong><p id="gaugeText">상승 48.4%, 하락 49.1%로 방향성이 팽팽합니다.</p></div>
-          </div>
-          <div class="direction-bar"><span style="width:48.4%"></span><i></i><b style="width:49.1%"></b></div>
-          <div class="direction-legend"><span>상승·신고가 48.4%</span><span>하락·신저가 49.1%</span></div>
-        </article>
       </div>
     </section>
 
@@ -141,7 +118,7 @@
           <div class="rank-list" id="unitRank"></div>
         </article>
       </div>
-      <p class="ranking-footnote">* TOP 10은 선택 기간과 지역에 해당하는 확보된 공개 거래 표본입니다. 상단 월간 지표와 가격지수는 선택 종료일이 속한 월 기준이며, 신고 취소·지연에 따라 달라질 수 있습니다.</p>
+      <p class="ranking-footnote">* TOP 10은 선택 기간과 지역에 해당하는 확보된 공개 거래 표본입니다. 상단 지표와 거래량은 선택 종료일이 속한 월 기준이며, 신고 취소·지연에 따라 달라질 수 있습니다.</p>
     </section>
 
     <section class="section location-section" id="location">
@@ -181,11 +158,11 @@
       <div class="source-lead"><p class="eyebrow">04 · DATA & METHOD</p><h2>출처는 투명하게,<br>판단은 신중하게.</h2><p>본 화면은 공공 실거래 자료를 바탕으로 한 대시보드 프로토타입입니다. 매수·임차 판단 전 원문과 최신 신고를 다시 확인하세요.</p></div>
       <div class="source-list">
         <a href="https://rt.molit.go.kr/" target="_blank" rel="noreferrer"><span>01</span><div><strong>국토교통부 실거래가 공개시스템</strong><small>매매·전월세 개별 거래 원천</small></div><b>↗</b></a>
-        <a href="https://www.reb.or.kr/r-one/" target="_blank" rel="noreferrer"><span>02</span><div><strong>한국부동산원 R-ONE</strong><small>가격동향·지수 정의와 비교</small></div><b>↗</b></a>
+        <a href="https://www.reb.or.kr/r-one/" target="_blank" rel="noreferrer"><span>02</span><div><strong>한국부동산원 R-ONE</strong><small>공식 주택시장 동향 참고</small></div><b>↗</b></a>
         <a href="https://www.gyeongju.go.kr/news/page.do?mnu_uid=1336&pageNo=32&pageOrder=0&pagePrvNxt=1&pageRef=0&parm_bod_uid=328112&parm_mnu_uid=0&srchBgpUid=-1&srchColumn=&srchEDate=9999-12-31&srchEnable=1&srchKeyword=&srchSDate=1960-01-01&srchVoteType=-1&step=258" target="_blank" rel="noreferrer"><span>03</span><div><strong>경주시 교통·개발 보도자료</strong><small>KTX 증편·경주역세권 현황</small></div><b>↗</b></a>
       </div>
       <div class="method-grid">
-        <div><span>지수</span><p>월별 대표가격 ÷ 2026년 1월 대표가격 × 100</p></div>
+        <div><span>기간 조회</span><p>계약일 기준 시작일·종료일 범위로 거래 표본 필터링</p></div>
         <div><span>평당가</span><p>거래금액 ÷ 전용면적 × 3.3058</p></div>
         <div><span>월세</span><p>보증금과 월 임대료를 분리 표기, 평당 월세는 월 임대료 기준</p></div>
       </div>
