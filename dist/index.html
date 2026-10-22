@@ -71,10 +71,15 @@
             <option value="중부동">중부동</option><option value="황오동">황오동</option><option value="성건동">성건동</option><option value="황남동">황남동</option><option value="월성동">월성동</option><option value="충효동">선도동·충효동</option><option value="용강동">용강동</option><option value="황성동">황성동</option><option value="동천동">동천동</option><option value="불국동">불국동</option><option value="보덕동">보덕동</option>
           </optgroup>
         </select></label>
-        <label><span>기준월</span><select id="dateSelect" aria-label="월별 실거래 집계 기준월"></select></label>
+        <fieldset class="date-range" aria-label="실거래 조회기간">
+          <legend>조회기간</legend>
+          <label><span class="sr-only">시작일</span><input id="startDate" type="date" aria-label="조회 시작일"></label>
+          <i aria-hidden="true">—</i>
+          <label><span class="sr-only">종료일</span><input id="endDate" type="date" aria-label="조회 종료일"></label>
+        </fieldset>
         <button class="reset-btn" id="resetBtn" type="button" aria-label="필터 초기화">↻ <span>초기화</span></button>
       </div>
-      <p class="filter-caption"><span class="live-pulse"></span><strong id="contextLabel">경주시 전체 · 매매 · 2026년 9월</strong> 시장을 보고 있습니다.</p>
+      <p class="filter-caption"><span class="live-pulse"></span><strong id="contextLabel">경주시 전체 · 매매 · 2026.09.01–09.30</strong> 기간을 보고 있습니다.</p>
     </section>
 
     <section class="section market-section">
@@ -136,7 +141,7 @@
           <div class="rank-list" id="unitRank"></div>
         </article>
       </div>
-      <p class="ranking-footnote">* 상단 지표와 차트는 선택한 기준월을 반영합니다. TOP 10은 확보된 최신 공개 거래 표본이며 신고 취소·지연에 따라 달라질 수 있습니다.</p>
+      <p class="ranking-footnote">* TOP 10은 선택 기간과 지역에 해당하는 확보된 공개 거래 표본입니다. 상단 월간 지표와 가격지수는 선택 종료일이 속한 월 기준이며, 신고 취소·지연에 따라 달라질 수 있습니다.</p>
     </section>
 
     <section class="section location-section" id="location">
