@@ -7,6 +7,33 @@
 .market-section .chart-grid{grid-template-columns:1fr}.market-section .volume-card{display:grid;grid-template-columns:minmax(220px,.45fr) minmax(320px,1fr);column-gap:44px;align-items:end}.market-section .volume-card .card-head,.market-section .volume-card .volume-main,.market-section .volume-card .volume-note{grid-column:1}.market-section .volume-card .bars{grid-column:2;grid-row:1/4;height:180px}
 .brand-copy{display:grid;gap:3px;line-height:1.05}.brand-title{font-size:17px}.brand-signature{font-size:9.5px;font-weight:650;color:#7a837f;letter-spacing:-.01em}.brand-signature b{color:#2f5f50;font-weight:850}.brand-signature small{font-size:8px;font-weight:750;margin-left:1px}.footer-brand .brand-title{font-size:13px}.footer-brand .brand-signature{font-size:8.5px}.footer-brand .brand-signature small{font-size:7px}
 @media(max-width:900px){.filters{flex-wrap:wrap}.date-range{min-width:300px}.reset-btn{margin-left:0}}
+
+.complex-section{padding-top:64px;padding-bottom:72px;background:#ebe9e3;max-width:none;padding-inline:max(22px,calc((100vw - 1400px)/2))}
+.complex-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:26px}
+.complex-heading h2{font-size:clamp(34px,4vw,56px);line-height:1.04;letter-spacing:-.06em;margin:0 0 12px}
+.complex-heading h2 span{color:#d66058}
+.complex-heading p:not(.eyebrow){margin:0;color:#68706c;font-size:14px}
+.complex-search{display:grid;gap:7px;min-width:280px;font-size:11px;font-weight:750;color:#69716d}
+.complex-search input{border:1px solid #d1d5cf;background:#fff;border-radius:12px;padding:12px 14px;font:inherit;color:var(--ink);outline:none}
+.complex-search input:focus{border-color:#5f8b7c;box-shadow:0 0 0 3px rgba(47,112,91,.12)}
+.complex-stats{display:flex;align-items:baseline;gap:7px;margin-bottom:18px}
+.complex-stats strong{font-size:34px;letter-spacing:-.05em;color:#d66058}
+.complex-stats span{font-size:13px;font-weight:800}
+.complex-stats small{margin-left:auto;color:#7c837f;font-size:11px}
+.complex-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.complex-card{min-height:116px;background:#fff;border:1px solid rgba(23,32,29,.07);border-radius:17px;padding:18px;display:grid;grid-template-columns:28px minmax(0,1fr) 18px;gap:10px;align-items:start;transition:.2s}
+.complex-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(23,32,29,.10);border-color:#cfd6d0}
+.complex-index{font-size:10px;color:#b2b7b3;font-variant-numeric:tabular-nums;padding-top:3px}
+.complex-card strong{font-size:15px;line-height:1.3;display:block;word-break:keep-all}
+.complex-card p{font-size:11px;color:#747c78;margin:8px 0 2px}
+.complex-card small{font-size:10px;color:#9a9f9c}
+.complex-card b{font-size:14px;color:#d66058}
+.complex-empty{grid-column:1/-1;background:#fff;border:1px dashed #c8cdc7;border-radius:18px;padding:34px;text-align:center}
+.complex-empty strong{font-size:18px}.complex-empty p{font-size:12px;color:#7e8581}.complex-empty a{display:inline-block;margin-top:8px;color:#2f705b;font-size:12px;font-weight:800}
+.complex-note{margin:16px 0 0;color:#7f8582;font-size:10px}
+@media(max-width:1100px){.complex-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.nav{gap:18px}}
+@media(max-width:760px){.nav a[href="#complexes"]{display:none}.complex-section{padding:48px 18px}.complex-heading{display:block}.complex-search{min-width:0;margin-top:22px}.complex-stats{flex-wrap:wrap}.complex-stats small{width:100%;margin-left:0}.complex-grid{grid-template-columns:1fr 1fr}.complex-card{min-height:108px;padding:15px;grid-template-columns:24px minmax(0,1fr) 16px}}
+@media(max-width:480px){.complex-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.date-range{grid-column:1/-1;min-width:0;width:100%;display:grid;grid-template-columns:1fr auto 1fr}.date-range legend{grid-column:1/-1}.date-range input{width:100%;min-width:0}.date-range i{text-align:center}.reset-btn{margin-left:auto}}
 @media(max-width:760px){.market-section .volume-card{display:block}.market-section .volume-card .bars{height:114px}}
 @media(max-width:760px){.topbar .brand{gap:8px}.topbar .brand-mark{width:25px;height:25px}.topbar .brand-title{font-size:14px}.topbar .brand-signature{font-size:8.5px}.topbar .brand-signature small{font-size:7.5px}}
