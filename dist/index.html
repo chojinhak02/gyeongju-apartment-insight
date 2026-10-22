@@ -59,19 +59,22 @@
           <button type="button" data-deal="jeonse" aria-pressed="false">전세</button>
           <button type="button" data-deal="monthly" aria-pressed="false">월세</button>
         </div></label>
-        <label><span>생활권</span><select id="regionSelect">
+        <label><span>경주시 지역</span><select id="regionSelect">
           <option value="all">경주시 전체</option>
-          <option value="north">용강·황성</option>
-          <option value="west">현곡·충효</option>
-          <option value="station">경주역세권</option>
-          <option value="industry">외동·안강</option>
+          <optgroup label="읍 지역">
+            <option value="감포읍">감포읍</option><option value="안강읍">안강읍</option><option value="건천읍">건천읍</option><option value="외동읍">외동읍</option>
+          </optgroup>
+          <optgroup label="면 지역">
+            <option value="문무대왕면">문무대왕면</option><option value="양남면">양남면</option><option value="내남면">내남면</option><option value="산내면">산내면</option><option value="서면">서면</option><option value="현곡면">현곡면</option><option value="강동면">강동면</option><option value="천북면">천북면</option>
+          </optgroup>
+          <optgroup label="동 지역">
+            <option value="중부동">중부동</option><option value="황오동">황오동</option><option value="성건동">성건동</option><option value="황남동">황남동</option><option value="월성동">월성동</option><option value="충효동">선도동·충효동</option><option value="용강동">용강동</option><option value="황성동">황성동</option><option value="동천동">동천동</option><option value="불국동">불국동</option><option value="보덕동">보덕동</option>
+          </optgroup>
         </select></label>
-        <label><span>기준월</span><select id="dateSelect" aria-label="현재 거래유형의 최신 집계월">
-          <option value="latest">최신 집계</option>
-        </select></label>
+        <label><span>기준월</span><select id="dateSelect" aria-label="월별 실거래 집계 기준월"></select></label>
         <button class="reset-btn" id="resetBtn" type="button" aria-label="필터 초기화">↻ <span>초기화</span></button>
       </div>
-      <p class="filter-caption"><span class="live-pulse"></span><strong id="contextLabel">경주시 전체 · 매매</strong> 시장을 보고 있습니다.</p>
+      <p class="filter-caption"><span class="live-pulse"></span><strong id="contextLabel">경주시 전체 · 매매 · 2026년 9월</strong> 시장을 보고 있습니다.</p>
     </section>
 
     <section class="section market-section">
@@ -133,7 +136,7 @@
           <div class="rank-list" id="unitRank"></div>
         </article>
       </div>
-      <p class="ranking-footnote">* 단지·면적·층이 다른 개별 계약의 단순 비교입니다. 순위는 신고 취소·지연에 따라 달라질 수 있습니다.</p>
+      <p class="ranking-footnote">* 상단 지표와 차트는 선택한 기준월을 반영합니다. TOP 10은 확보된 최신 공개 거래 표본이며 신고 취소·지연에 따라 달라질 수 있습니다.</p>
     </section>
 
     <section class="section location-section" id="location">
